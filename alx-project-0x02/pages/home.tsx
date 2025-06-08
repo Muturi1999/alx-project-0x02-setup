@@ -2,6 +2,8 @@ import Head from 'next/head';
 import { useState } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
+import Header from '@/components/layout/Header';
+
 
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -15,10 +17,12 @@ export default function HomePage() {
   };
 
   return (
+    
     <>
       <Head>
         <title>Home Page</title>
       </Head>
+      <Header />
       <main className="min-h-screen bg-green-50 p-8">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold text-green-800">This is the Home Page</h1>

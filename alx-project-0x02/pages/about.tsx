@@ -15,6 +15,8 @@
 // }
 import Head from 'next/head';
 import Button from '@/components/common/Button';
+import Header from '@/components/layout/Header';
+
 
 export default function AboutPage() {
   return (
@@ -22,6 +24,7 @@ export default function AboutPage() {
       <Head>
         <title>About Page</title>
       </Head>
+      <Header />
       <main className="min-h-screen bg-purple-50 p-8">
         <h1 className="text-3xl font-bold text-purple-800 mb-6">About This Project</h1>
         <div className="space-x-4">
